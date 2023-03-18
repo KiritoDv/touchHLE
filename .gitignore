@@ -1,3 +1,4 @@
 /target
 /vendor/boost
 /touchHLE_sandbox
+*.ipa
