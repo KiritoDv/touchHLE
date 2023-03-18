@@ -131,4 +131,8 @@ impl Bundle {
             self.path.join(format!("{}.nib", filename))
         })
     }
+
+    pub fn _info_plist(&self) -> &Dictionary {
+        &self.plist
+    }
 }

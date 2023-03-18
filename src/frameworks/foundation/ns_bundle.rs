@@ -119,6 +119,15 @@ pub const CLASSES: ClassExports = objc_classes! {
    let path_url: id = msg![env; path_url initFileURLWithPath:path_string];
    autorelease(env, path_url)
 }
+- (id)infoDictionary {
+    // log(env.bundle.info_plist().);
+    nil
+}
+- (id) localizedStringForKey:(id)_key // NSString*
+                       value:(id)_value // NSString*
+                       table:(id)_table { // NSString*
+    ns_string::get_static_str(env, "unknown")
+}
 
 // TODO: constructors, more accessors
 
